@@ -1,8 +1,11 @@
 name: Heroku Awake
 
 on:
-  schedule:
-    - cron: "0,30 16-23,0-7 * * *"
+  push
+ 
+ #schedule:
+    #- cron: "0 16-23,0-7 * * *"
+    
 
 jobs:
   build:
